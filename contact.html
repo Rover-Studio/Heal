@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>联系 · 治愈空间</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">治愈空间</a>
+      <button class="nav-toggle" aria-label="切换导航">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <a href="gallery.html">画廊</a>
+        <a href="contact.html" class="active">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h2>与我们说声你好</h2>
+    <p class="muted">如果有想分享的故事或建议，写信给我们（示例页面，不发送真实邮件）。</p>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('感谢你的留言 — 这是演示表单');">
+      <label>姓名
+        <input type="text" name="name" placeholder="你的名字" required />
+      </label>
+      <label>邮箱
+        <input type="email" name="email" placeholder="name@example.com" required />
+      </label>
+      <label>内容
+        <textarea name="message" rows="6" placeholder="想对我们说的话"></textarea>
+      </label>
+      <p>
+        <button class="btn" type="submit">发送</button>
+      </p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 治愈空间</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>画廊 · 治愈空间</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">治愈空间</a>
+      <button class="nav-toggle" aria-label="切换导航">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <a href="gallery.html" class="active">画廊</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container gallery-page">
+    <h2>温柔画廊</h2>
+    <p class="muted">点击任意图片查看大图（示例为渐变占位图，易替换为真实图片）。</p>
+
+    <section class="grid gallery-grid" aria-label="画廊">
+      <!-- 用渐变背景作为占位图 -->
+      <div class="thumb" data-large="#g1" style="background:linear-gradient(135deg,#ffd1dc,#ffe2c6)">
+        <span>晨光</span>
+      </div>
+      <div class="thumb" data-large="#g2" style="background:linear-gradient(135deg,#cfeaf5,#e3d7ff)">
+        <span>薄雾</span>
+      </div>
+      <div class="thumb" data-large="#g3" style="background:linear-gradient(135deg,#d6f5d6,#fff1c6)">
+        <span>微风</span>
+      </div>
+      <div class="thumb" data-large="#g4" style="background:linear-gradient(135deg,#ffdbe6,#e6f8ff)">
+        <span>落叶</span>
+      </div>
+      <div class="thumb" data-large="#g5" style="background:linear-gradient(135deg,#fbe6ff,#e6fff4)">
+        <span>夜语</span>
+      </div>
+      <div class="thumb" data-large="#g6" style="background:linear-gradient(135deg,#fff0d6,#ffd6f0)">
+        <span>暖茶</span>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lb-close" aria-label="关闭">✕</button>
+      <div class="lb-content"></div>
+      <p class="lb-caption"></p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 治愈空间</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
