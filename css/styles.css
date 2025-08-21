@@ -87,6 +87,22 @@ body{
   .site-nav.show{display:flex}
 }
 
+/* Animated hamburger -> X */
+.nav-toggle{width:44px;height:36px;display:inline-flex;align-items:center;justify-content:center;padding:6px}
+.hamburger{display:inline-block;width:28px;height:18px;position:relative}
+.hamburger span{display:block;position:absolute;left:0;right:0;height:2px;background:var(--muted);border-radius:2px;transition:transform .28s cubic-bezier(.2,.9,.2,1),opacity .2s,top .28s}
+.hamburger span:nth-child(1){top:0}
+.hamburger span:nth-child(2){top:8px}
+.hamburger span:nth-child(3){top:16px}
+
+.nav-toggle[aria-expanded="true"] .hamburger span{background:#08303a}
+.nav-toggle[aria-expanded="true"] .hamburger span:nth-child(1){top:8px;transform:rotate(45deg)}
+.nav-toggle[aria-expanded="true"] .hamburger span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] .hamburger span:nth-child(3){top:8px;transform:rotate(-45deg)}
+
+/* Reduce visual jump when toggling nav */
+.nav-toggle:focus{outline:2px solid rgba(10,30,30,0.08);outline-offset:3px;border-radius:6px}
+
 /* Buttons */
 .btn{display:inline-block;padding:0.6rem 0.9rem;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#073235;text-decoration:none;font-weight:700}
 .btn-ghost{background:transparent;border:1px solid rgba(12,18,24,0.06)}

@@ -3,7 +3,18 @@
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.site-nav');
   if(toggle && nav){
-    toggle.addEventListener('click',()=> nav.classList.toggle('show'))
+    toggle.addEventListener('click',()=>{
+      const isOpen = nav.classList.toggle('show');
+      // reflect state for accessible control and animated icon
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    })
+    // close nav when a link is clicked (mobile)
+    nav.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=>{
+      if(nav.classList.contains('show')){
+        nav.classList.remove('show');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    }))
   }
 
   // 画廊灯箱
