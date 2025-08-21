@@ -27,7 +27,7 @@ body{
 .site-nav a{padding:0.5rem 0.75rem;border-radius:8px;text-decoration:none;color:var(--muted);transition:all .25s}
 .site-nav a:hover{background:var(--glass);color:#0f2f2f}
 .site-nav a.active{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#08303a}
-.nav-toggle{display:none;background:transparent;border:0;font-size:1.25rem}
+.nav-toggle{background:transparent;border:0;font-size:1.25rem}
 
 /* Hero */
 .hero{position:relative;min-height:60vh;display:flex;align-items:center}
@@ -82,7 +82,7 @@ body{
 
 /* responsive */
 @media (max-width:780px){
-  .nav-toggle{display:block}
+  .nav-toggle{display:inline-flex}
   .site-nav{position:absolute;right:12px;top:60px;background:linear-gradient(180deg,rgba(255,255,255,0.96),#fff);padding:0.5rem;border-radius:10px;box-shadow:0 8px 20px rgba(8,12,16,0.08);flex-direction:column;display:none}
   .site-nav.show{display:flex}
 }
