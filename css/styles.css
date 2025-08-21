@@ -5,6 +5,8 @@
   --muted:#7b8794;
   --accent:#9ad3cc;
   --accent-2:#ffd1dc;
+  --heal:#81d8d1;
+  --heal-2:#fbf7d8;
   --shadow: rgba(12,18,24,0.06);
   --glass: rgba(255,255,255,0.6);
   --radius:14px;
@@ -106,6 +108,7 @@ body{
 /* Buttons */
 .btn{display:inline-block;padding:0.6rem 0.9rem;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#073235;text-decoration:none;font-weight:700}
 .btn-ghost{background:transparent;border:1px solid rgba(12,18,24,0.06)}
+.btn-heal{display:inline-block;padding:0.6rem 0.9rem;border-radius:10px;background:linear-gradient(90deg,var(--heal),var(--heal-2));color:#073235;text-decoration:none;font-weight:700;box-shadow:0 6px 18px var(--shadow);transition:all .25s}
 
 .muted{color:var(--muted)}
 
